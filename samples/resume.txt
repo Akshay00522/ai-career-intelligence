@@ -1,0 +1,10 @@
+**Sample Candidate — Data Science Profile**
+
+Skills: Python, pandas, NumPy, scikit-learn, SQL (PostgreSQL), Matplotlib, Git
+
+Projects:
+- Built a synthetic customer churn prediction model with scikit-learn and cross-validation; achieved 0.87 AUC on a test dataset.
+- Created Tableau dashboards for sales analysis and wrote SQL queries using PostgreSQL.
+- Explored NLP text classification using TF-IDF and logistic regression.
+
+Note: This is fictional demonstration data for testing the Resume Analyzer. Project metrics are illustrative, not independently verified.

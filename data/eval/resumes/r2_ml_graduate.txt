@@ -1,0 +1,13 @@
+Karan Verma
+Aspiring Machine Learning Engineer | BCA final year
+
+SKILLS
+Python, pandas, NumPy, scikit-learn, SQL, matplotlib, Git, Flask, statistics
+
+PROJECTS
+- Customer churn prediction: feature engineering, cross-validation and hyperparameter tuning with scikit-learn, 0.87 AUC.
+- Movie review sentiment analysis: NLP text classification using TF-IDF and logistic regression.
+- House price model served through a small Flask app on a free hosting tier.
+
+EDUCATION
+BCA (final year), data science electives; completed an online machine learning course.

@@ -1,0 +1,12 @@
+Data Analyst
+
+Requirements
+- Strong SQL skills for querying and transforming data
+- Proficiency in Excel for reporting
+- Experience building dashboards with Tableau or Power BI
+- Solid understanding of statistics and hypothesis testing
+- Good communication skills
+
+Nice to have
+- Python (pandas) for data analysis
+- Experience with A/B testing

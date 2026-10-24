@@ -1,0 +1,764 @@
+{
+ "python": {
+  "hours": 60,
+  "practice": "Build a CLI expense tracker with file storage and unit tests.",
+  "resources": [
+   {
+    "title": "The Python Tutorial",
+    "provider": "python.org",
+    "url": "https://docs.python.org/3/tutorial/"
+   }
+  ]
+ },
+ "sql": {
+  "hours": 30,
+  "practice": "Design a small library database and answer 20 business questions with joins and window functions.",
+  "resources": [
+   {
+    "title": "Intro to SQL",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/intro-to-sql"
+   },
+   {
+    "title": "PostgreSQL Tutorial",
+    "provider": "postgresql.org",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html"
+   }
+  ]
+ },
+ "pandas": {
+  "hours": 20,
+  "practice": "Clean a messy public CSV dataset and publish the notebook.",
+  "resources": [
+   {
+    "title": "Pandas course",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/pandas"
+   }
+  ]
+ },
+ "numpy": {
+  "hours": 10,
+  "practice": "Implement linear regression from scratch using only NumPy.",
+  "resources": [
+   {
+    "title": "NumPy: the absolute basics",
+    "provider": "numpy.org",
+    "url": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+   }
+  ]
+ },
+ "statistics": {
+  "hours": 40,
+  "practice": "Run and interpret an A/B test on a sample dataset, reporting confidence intervals.",
+  "resources": [
+   {
+    "title": "Statistics and probability",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability"
+   }
+  ]
+ },
+ "machine learning": {
+  "hours": 50,
+  "practice": "Train, evaluate and compare three models on a Kaggle tabular dataset.",
+  "resources": [
+   {
+    "title": "Intro to Machine Learning",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+   },
+   {
+    "title": "Machine Learning Specialization",
+    "provider": "Coursera / DeepLearning.AI",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction"
+   }
+  ]
+ },
+ "scikit-learn": {
+  "hours": 20,
+  "practice": "Build a full pipeline (preprocessing, model, cross-validation) for a classification task.",
+  "resources": [
+   {
+    "title": "scikit-learn user guide",
+    "provider": "scikit-learn.org",
+    "url": "https://scikit-learn.org/stable/user_guide.html"
+   }
+  ]
+ },
+ "model evaluation": {
+  "hours": 12,
+  "practice": "Compare metrics (precision, recall, ROC-AUC) on an imbalanced dataset and explain the trade-offs.",
+  "resources": [
+   {
+    "title": "Model evaluation",
+    "provider": "scikit-learn.org",
+    "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+   }
+  ]
+ },
+ "feature engineering": {
+  "hours": 15,
+  "practice": "Improve a baseline model with engineered features and document the gain.",
+  "resources": [
+   {
+    "title": "Feature Engineering",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/feature-engineering"
+   }
+  ]
+ },
+ "deep learning": {
+  "hours": 50,
+  "practice": "Train a small CNN image classifier and plot learning curves.",
+  "resources": [
+   {
+    "title": "Intro to Deep Learning",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/intro-to-deep-learning"
+   },
+   {
+    "title": "Practical Deep Learning",
+    "provider": "fast.ai",
+    "url": "https://course.fast.ai/"
+   }
+  ]
+ },
+ "pytorch": {
+  "hours": 30,
+  "practice": "Re-implement an image or text classifier in PyTorch with a custom training loop.",
+  "resources": [
+   {
+    "title": "Learn the Basics",
+    "provider": "pytorch.org",
+    "url": "https://pytorch.org/tutorials/beginner/basics/intro.html"
+   }
+  ]
+ },
+ "tensorflow": {
+  "hours": 30,
+  "practice": "Build and deploy a Keras model to classify images.",
+  "resources": [
+   {
+    "title": "TensorFlow tutorials",
+    "provider": "tensorflow.org",
+    "url": "https://www.tensorflow.org/tutorials"
+   }
+  ]
+ },
+ "computer vision": {
+  "hours": 35,
+  "practice": "Build an object detector for a custom dataset using OpenCV and a pretrained model.",
+  "resources": [
+   {
+    "title": "OpenCV tutorials",
+    "provider": "opencv.org",
+    "url": "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
+   }
+  ]
+ },
+ "nlp": {
+  "hours": 35,
+  "practice": "Build a text classifier and compare TF-IDF with transformer embeddings.",
+  "resources": [
+   {
+    "title": "NLP course",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn"
+   }
+  ]
+ },
+ "llm": {
+  "hours": 25,
+  "practice": "Build a small chatbot using an LLM API with prompt templates and basic evaluation.",
+  "resources": [
+   {
+    "title": "Hugging Face learn hub",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn"
+   }
+  ]
+ },
+ "rag": {
+  "hours": 25,
+  "practice": "Build a Q&A bot over your own PDFs and measure retrieval quality on 20 test questions.",
+  "resources": [
+   {
+    "title": "LangChain documentation",
+    "provider": "langchain.com",
+    "url": "https://python.langchain.com/docs/introduction/"
+   }
+  ]
+ },
+ "langchain": {
+  "hours": 15,
+  "practice": "Create a retrieval chain over a document collection with a simple Streamlit front end.",
+  "resources": [
+   {
+    "title": "LangChain documentation",
+    "provider": "langchain.com",
+    "url": "https://python.langchain.com/docs/introduction/"
+   }
+  ]
+ },
+ "vector databases": {
+  "hours": 12,
+  "practice": "Index 1,000 documents in FAISS and compare retrieval settings.",
+  "resources": [
+   {
+    "title": "FAISS wiki",
+    "provider": "GitHub",
+    "url": "https://github.com/facebookresearch/faiss/wiki"
+   }
+  ]
+ },
+ "mlops": {
+  "hours": 30,
+  "practice": "Track experiments with MLflow, containerize the best model and expose it as an API.",
+  "resources": [
+   {
+    "title": "MLflow documentation",
+    "provider": "mlflow.org",
+    "url": "https://mlflow.org/docs/latest/"
+   },
+   {
+    "title": "MLOps principles",
+    "provider": "ml-ops.org",
+    "url": "https://ml-ops.org/"
+   }
+  ]
+ },
+ "fastapi": {
+  "hours": 15,
+  "practice": "Wrap a trained model in a FastAPI service with request validation and tests.",
+  "resources": [
+   {
+    "title": "FastAPI tutorial",
+    "provider": "fastapi.tiangolo.com",
+    "url": "https://fastapi.tiangolo.com/tutorial/"
+   }
+  ]
+ },
+ "flask": {
+  "hours": 15,
+  "practice": "Build a small CRUD web app with Flask and SQLite.",
+  "resources": [
+   {
+    "title": "Flask tutorial",
+    "provider": "flask.palletsprojects.com",
+    "url": "https://flask.palletsprojects.com/en/stable/tutorial/"
+   }
+  ]
+ },
+ "rest apis": {
+  "hours": 10,
+  "practice": "Design a REST API for a todo service with proper status codes and docs.",
+  "resources": [
+   {
+    "title": "RESTful API guide",
+    "provider": "restfulapi.net",
+    "url": "https://restfulapi.net/"
+   }
+  ]
+ },
+ "docker": {
+  "hours": 20,
+  "practice": "Containerize one of your projects with a Dockerfile and docker-compose.",
+  "resources": [
+   {
+    "title": "Get started",
+    "provider": "docs.docker.com",
+    "url": "https://docs.docker.com/get-started/"
+   }
+  ]
+ },
+ "kubernetes": {
+  "hours": 35,
+  "practice": "Deploy a two-service app on a local cluster (minikube or kind) with a rolling update.",
+  "resources": [
+   {
+    "title": "Kubernetes Basics",
+    "provider": "kubernetes.io",
+    "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/"
+   }
+  ]
+ },
+ "terraform": {
+  "hours": 25,
+  "practice": "Provision a small VPC and VM with Terraform and tear it down again.",
+  "resources": [
+   {
+    "title": "Terraform tutorials",
+    "provider": "HashiCorp",
+    "url": "https://developer.hashicorp.com/terraform/tutorials"
+   }
+  ]
+ },
+ "git": {
+  "hours": 10,
+  "practice": "Contribute a pull request to an open-source project or practise branching and rebasing in your own repo.",
+  "resources": [
+   {
+    "title": "Pro Git (free book)",
+    "provider": "git-scm.com",
+    "url": "https://git-scm.com/book/en/v2"
+   }
+  ]
+ },
+ "ci/cd": {
+  "hours": 12,
+  "practice": "Add a GitHub Actions workflow that runs tests and builds a Docker image on every push.",
+  "resources": [
+   {
+    "title": "GitHub Actions quickstart",
+    "provider": "docs.github.com",
+    "url": "https://docs.github.com/en/actions/quickstart"
+   }
+  ]
+ },
+ "testing": {
+  "hours": 12,
+  "practice": "Reach 80 percent coverage on one project using pytest and fixtures.",
+  "resources": [
+   {
+    "title": "pytest getting started",
+    "provider": "docs.pytest.org",
+    "url": "https://docs.pytest.org/en/stable/getting-started.html"
+   }
+  ]
+ },
+ "linux": {
+  "hours": 25,
+  "practice": "Set up a small server on a VM: users, permissions, cron, and a systemd service.",
+  "resources": [
+   {
+    "title": "Linux Journey",
+    "provider": "linuxjourney.com",
+    "url": "https://linuxjourney.com/"
+   }
+  ]
+ },
+ "aws": {
+  "hours": 40,
+  "practice": "Deploy a containerized app on EC2 or ECS with S3 storage, staying within the free tier.",
+  "resources": [
+   {
+    "title": "AWS Getting Started",
+    "provider": "aws.amazon.com",
+    "url": "https://aws.amazon.com/getting-started/"
+   }
+  ]
+ },
+ "spark": {
+  "hours": 35,
+  "practice": "Process a multi-GB dataset with PySpark and compare runtime against pandas.",
+  "resources": [
+   {
+    "title": "PySpark getting started",
+    "provider": "spark.apache.org",
+    "url": "https://spark.apache.org/docs/latest/api/python/getting_started/index.html"
+   }
+  ]
+ },
+ "airflow": {
+  "hours": 20,
+  "practice": "Orchestrate a daily ETL DAG with retries and alerting.",
+  "resources": [
+   {
+    "title": "Airflow tutorial",
+    "provider": "airflow.apache.org",
+    "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html"
+   }
+  ]
+ },
+ "etl": {
+  "hours": 25,
+  "practice": "Build an extract-transform-load pipeline from a public API into a SQL database.",
+  "resources": [
+   {
+    "title": "Airflow tutorial",
+    "provider": "airflow.apache.org",
+    "url": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html"
+   }
+  ]
+ },
+ "data warehousing": {
+  "hours": 25,
+  "practice": "Model a star schema for a sales dataset and load it into a cloud warehouse trial.",
+  "resources": [
+   {
+    "title": "Snowflake getting started",
+    "provider": "docs.snowflake.com",
+    "url": "https://docs.snowflake.com/en/user-guide-getting-started"
+   }
+  ]
+ },
+ "kafka": {
+  "hours": 20,
+  "practice": "Stream simulated events through a Kafka topic and consume them into a database.",
+  "resources": [
+   {
+    "title": "Apache Kafka quickstart",
+    "provider": "kafka.apache.org",
+    "url": "https://kafka.apache.org/quickstart"
+   }
+  ]
+ },
+ "tableau": {
+  "hours": 20,
+  "practice": "Publish an interactive dashboard on Tableau Public from a real dataset.",
+  "resources": [
+   {
+    "title": "Tableau training",
+    "provider": "tableau.com",
+    "url": "https://www.tableau.com/learn/training"
+   }
+  ]
+ },
+ "power bi": {
+  "hours": 20,
+  "practice": "Build a sales dashboard with DAX measures from a public dataset.",
+  "resources": [
+   {
+    "title": "Power BI training",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi"
+   }
+  ]
+ },
+ "excel": {
+  "hours": 15,
+  "practice": "Create a pivot-table report with lookups and charts from a messy sheet.",
+  "resources": [
+   {
+    "title": "Excel help and learning",
+    "provider": "Microsoft",
+    "url": "https://support.microsoft.com/en-us/excel"
+   }
+  ]
+ },
+ "data visualization": {
+  "hours": 15,
+  "practice": "Reproduce three published charts with matplotlib and improve their clarity.",
+  "resources": [
+   {
+    "title": "Matplotlib tutorials",
+    "provider": "matplotlib.org",
+    "url": "https://matplotlib.org/stable/tutorials/index.html"
+   }
+  ]
+ },
+ "javascript": {
+  "hours": 50,
+  "practice": "Build an interactive to-do app without a framework.",
+  "resources": [
+   {
+    "title": "Learn web development",
+    "provider": "MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+   }
+  ]
+ },
+ "typescript": {
+  "hours": 20,
+  "practice": "Convert a small JavaScript project to strict TypeScript.",
+  "resources": [
+   {
+    "title": "TypeScript handbook",
+    "provider": "typescriptlang.org",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+   }
+  ]
+ },
+ "react": {
+  "hours": 40,
+  "practice": "Build a dashboard SPA that consumes a public API.",
+  "resources": [
+   {
+    "title": "Learn React",
+    "provider": "react.dev",
+    "url": "https://react.dev/learn"
+   }
+  ]
+ },
+ "node.js": {
+  "hours": 25,
+  "practice": "Build a REST API with Express and a database.",
+  "resources": [
+   {
+    "title": "Learn Node.js",
+    "provider": "nodejs.org",
+    "url": "https://nodejs.org/en/learn"
+   }
+  ]
+ },
+ "mongodb": {
+  "hours": 15,
+  "practice": "Model a blog's posts and comments and write aggregation queries.",
+  "resources": [
+   {
+    "title": "MongoDB University",
+    "provider": "mongodb.com",
+    "url": "https://learn.mongodb.com/"
+   }
+   
+  ]
+ } , 
+ 
+  "agile": {
+    "hours": 10,
+    "practice": "Run a two-week simulated sprint: write user stories, prioritize a backlog, and conduct a retrospective.",
+    "resources": [
+      {
+        "title": "Scrum Guide",
+        "provider": "scrumguides.org",
+        "url": "https://scrumguides.org/"
+      }
+    ]
+  },
+  "azure": {
+    "hours": 25,
+    "practice": "Deploy a small Python web app and configure storage, access permissions, and monitoring.",
+    "resources": [
+      {
+        "title": "Azure training",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/training/azure/"
+      }
+    ]
+  },
+  "c#": {
+    "hours": 35,
+    "practice": "Build a console-based inventory manager using classes, collections, exception handling, and unit tests.",
+    "resources": [
+      {
+        "title": "C# documentation and tutorials",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+      }
+    ]
+  },
+  "c++": {
+    "hours": 40,
+    "practice": "Build a command-line contact manager using classes, STL containers, file handling, and tests.",
+    "resources": [
+      {
+        "title": "C++ language documentation",
+        "provider": "cppreference.com",
+        "url": "https://en.cppreference.com/w/"
+      }
+    ]
+  },
+  "communication": {
+    "hours": 12,
+    "practice": "Present a technical project in five minutes, write a concise project summary, and practise answering stakeholder questions.",
+    "resources": [
+      {
+        "title": "Communication skills",
+        "provider": "MindTools",
+        "url": "https://www.mindtools.com/communication-skills/"
+      }
+    ]
+  },
+  "data analysis": {
+    "hours": 20,
+    "practice": "Analyze a public dataset, clean missing values, identify trends, and publish a notebook with evidence-based conclusions.",
+    "resources": [
+      {
+        "title": "Data analysis with Python",
+        "provider": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn"
+      }
+    ]
+  },
+  "data structures": {
+    "hours": 35,
+    "practice": "Implement stacks, queues, linked lists, trees, and hash maps, then compare operation time complexities.",
+    "resources": [
+      {
+        "title": "Data structures and algorithms",
+        "provider": "OpenDSA",
+        "url": "https://opendsa-server.cs.vt.edu/"
+      }
+    ]
+  },
+  "dbt": {
+    "hours": 20,
+    "practice": "Build a small analytics project with source tables, staging models, tests, and documentation.",
+    "resources": [
+      {
+        "title": "dbt documentation",
+        "provider": "dbt Labs",
+        "url": "https://docs.getdbt.com/docs/introduction"
+      }
+    ]
+  },
+  "django": {
+    "hours": 25,
+    "practice": "Build a task-management app with models, forms, authentication, validation, and tests.",
+    "resources": [
+      {
+        "title": "Django tutorial",
+        "provider": "Django Project",
+        "url": "https://docs.djangoproject.com/en/stable/intro/tutorial01/"
+      }
+    ]
+  },
+  "gcp": {
+    "hours": 25,
+    "practice": "Deploy a small application to Cloud Run and configure logs and environment variables; check costs before deploying.",
+    "resources": [
+      {
+        "title": "Google Cloud training",
+        "provider": "Google Cloud",
+        "url": "https://cloud.google.com/learn/training"
+      }
+    ]
+  },
+  "golang": {
+    "hours": 30,
+    "practice": "Build a JSON REST API in Go with validation, error handling, and unit tests.",
+    "resources": [
+      {
+        "title": "A Tour of Go",
+        "provider": "The Go Project",
+        "url": "https://go.dev/tour/"
+      }
+    ]
+  },
+  "html/css": {
+    "hours": 25,
+    "practice": "Build a responsive portfolio page with semantic HTML, accessible forms, and a mobile-friendly layout.",
+    "resources": [
+      {
+        "title": "Learn web development",
+        "provider": "MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+      }
+    ]
+  },
+  "hugging face": {
+    "hours": 15,
+    "practice": "Use a pretrained transformer for text classification and document its limitations on sample inputs.",
+    "resources": [
+      {
+        "title": "Hugging Face course",
+        "provider": "Hugging Face",
+        "url": "https://huggingface.co/learn"
+      }
+    ]
+  },
+  "java": {
+    "hours": 40,
+    "practice": "Build a library-management application using OOP, collections, file or database persistence, and unit tests.",
+    "resources": [
+      {
+        "title": "Java tutorials",
+        "provider": "dev.java",
+        "url": "https://dev.java/learn/"
+      }
+    ]
+  },
+  "microservices": {
+    "hours": 25,
+    "practice": "Split a small application into two services with separate responsibilities, API communication, and integration tests.",
+    "resources": [
+      {
+        "title": "Microservices guide",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices"
+      }
+    ]
+  },
+  "nosql": {
+    "hours": 15,
+    "practice": "Model the same sample application in a document database and a relational database, then explain the trade-offs.",
+    "resources": [
+      {
+        "title": "NoSQL database concepts",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data"
+      }
+    ]
+  },
+  "oop": {
+    "hours": 20,
+    "practice": "Refactor a procedural application into classes and demonstrate encapsulation, composition, inheritance, and polymorphism.",
+    "resources": [
+      {
+        "title": "Object-oriented programming concepts",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop"
+      }
+    ]
+  },
+  "prompt engineering": {
+    "hours": 10,
+    "practice": "Create a set of prompts for a defined task, test them against 20 examples, and document failure cases and improvements.",
+    "resources": [
+      {
+        "title": "Prompt engineering guide",
+        "provider": "OpenAI",
+        "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+      }
+    ]
+  },
+  "r": {
+    "hours": 25,
+    "practice": "Analyze a public dataset using data frames, visualizations, summary statistics, and a reproducible report.",
+    "resources": [
+      {
+        "title": "R for Data Science",
+        "provider": "R4DS",
+        "url": "https://r4ds.hadley.nz/"
+      }
+    ]
+  },
+  "redis": {
+    "hours": 12,
+    "practice": "Add caching to a small API using Redis, set expiration policies, and measure response times.",
+    "resources": [
+      {
+        "title": "Redis documentation",
+        "provider": "Redis",
+        "url": "https://redis.io/docs/latest/"
+      }
+    ]
+  },
+  "system design": {
+    "hours": 25,
+    "practice": "Design a URL-shortener service, document API contracts, data storage, caching, scaling, and failure trade-offs.",
+    "resources": [
+      {
+        "title": "System design primer",
+        "provider": "GitHub",
+        "url": "https://github.com/donnemartin/system-design-primer"
+      }
+    ]
+  },
+  "time series": {
+    "hours": 20,
+    "practice": "Build a time-series forecasting baseline, use time-ordered validation, and compare it with a second model.",
+    "resources": [
+      {
+        "title": "Time series forecasting",
+        "provider": "Forecasting: Principles and Practice",
+        "url": "https://otexts.com/fpp3/"
+      }
+    ]
+  },
+  "xgboost": {
+    "hours": 15,
+    "practice": "Train an XGBoost model on a tabular dataset, tune its parameters, and compare results against a simple baseline.",
+    "resources": [
+      {
+        "title": "XGBoost tutorials",
+        "provider": "XGBoost",
+        "url": "https://xgboost.readthedocs.io/en/stable/tutorials/"
+      }
+    ]
+  }
+
+ 
+}
+

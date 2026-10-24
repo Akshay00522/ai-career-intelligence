@@ -1,0 +1,11 @@
+Dev Malhotra
+Generative AI Developer | 1 year experience
+
+SKILLS
+Python, LLMs, RAG, LangChain, prompt engineering, Hugging Face, FastAPI, FAISS, Pinecone, Docker, Git, NLP
+
+EXPERIENCE
+AI Developer, DocuMind
+- Built a retrieval-augmented generation chatbot over company PDFs using LangChain and FAISS.
+- Exposed the pipeline through a FastAPI service and containerized it with Docker.
+- Evaluated prompts and retrieval quality; reduced hallucinated answers by 30 percent.

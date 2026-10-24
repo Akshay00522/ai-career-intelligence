@@ -1,0 +1,11 @@
+Arjun Nair
+Backend Developer (Python) | 3 years experience
+
+SKILLS
+Python, FastAPI, Flask, PostgreSQL, Redis, Docker, REST APIs, pytest, unit testing, CI/CD, GitHub Actions, AWS, Linux, Git
+
+EXPERIENCE
+Backend Developer, FinServe
+- Built FastAPI microservices handling payment webhooks, with 90 percent test coverage using pytest.
+- Containerized services with Docker and automated deployment through GitHub Actions to AWS.
+- Optimized PostgreSQL queries and added Redis caching, cutting latency by 40 percent.

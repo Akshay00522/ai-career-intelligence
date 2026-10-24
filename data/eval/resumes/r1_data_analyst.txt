@@ -1,0 +1,14 @@
+Riya Mehta
+Junior Data Analyst | BCA graduate
+
+SKILLS
+Excel (pivot tables, VLOOKUP), SQL (MySQL), Tableau, Power BI, Python (basics), pandas, statistics, data visualization
+
+EXPERIENCE
+Data Analyst Intern, RetailKart (6 months)
+- Wrote SQL queries on MySQL to analyze weekly sales and customer retention.
+- Built Tableau and Power BI dashboards used by the regional sales team.
+- Cleaned datasets with pandas and ran hypothesis testing on discount campaigns.
+
+PROJECT
+- Exploratory data analysis on a public e-commerce dataset with matplotlib and seaborn.

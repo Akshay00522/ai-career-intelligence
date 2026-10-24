@@ -1,0 +1,3 @@
+# Optional: semantic similarity with sentence embeddings (downloads a model on first use)
+-r requirements.txt
+sentence-transformers>=2.6

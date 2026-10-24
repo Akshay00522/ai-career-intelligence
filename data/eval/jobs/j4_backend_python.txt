@@ -1,0 +1,14 @@
+Backend Engineer (Python)
+
+Requirements
+- Strong Python skills
+- Building REST APIs with FastAPI or Flask
+- Hands-on with PostgreSQL
+- Docker and containerized deployments
+- Unit testing with pytest
+- Experience with CI/CD pipelines
+
+Nice to have
+- Kubernetes
+- AWS
+- Redis

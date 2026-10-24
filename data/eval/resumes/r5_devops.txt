@@ -1,0 +1,11 @@
+Vikram Singh
+DevOps Engineer | 4 years experience
+
+SKILLS
+Linux, Bash, Docker, Kubernetes, AWS, Terraform, Jenkins, CI/CD, Git, Python (scripting), infrastructure as code
+
+EXPERIENCE
+DevOps Engineer, CloudNine
+- Managed Kubernetes clusters on AWS and automated provisioning using Terraform.
+- Built Jenkins CI/CD pipelines that cut release time from two hours to 15 minutes.
+- Wrote Python and Bash scripts for monitoring and incident automation on Linux servers.

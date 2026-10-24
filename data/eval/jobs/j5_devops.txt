@@ -1,0 +1,12 @@
+DevOps Engineer
+
+Requirements
+- Strong Linux and shell scripting experience
+- Docker and Kubernetes in production
+- CI/CD pipelines using Jenkins or GitHub Actions
+- Cloud experience with AWS, GCP or Azure
+- Infrastructure as code with Terraform
+
+Nice to have
+- Python scripting
+- Monitoring and incident response

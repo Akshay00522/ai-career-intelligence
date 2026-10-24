@@ -1,0 +1,12 @@
+Full-Stack Developer
+
+Requirements
+- Proficiency in JavaScript and React
+- Backend experience with Node.js and REST APIs
+- Working knowledge of SQL databases such as MySQL or PostgreSQL
+- Version control with Git
+- Familiarity with agile teams
+
+Nice to have
+- TypeScript
+- Docker and AWS

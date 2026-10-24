@@ -1,0 +1,56 @@
+# AARAV SHARMA
+**Aspiring AI/ML Developer**
+
+Jaipur, Rajasthan, India  
+Email: aarav.sharma@example.com  
+GitHub: github.com/aaravsharma-demo
+
+## PROFESSIONAL SUMMARY
+
+BCA student specializing in Artificial Intelligence and Machine Learning, with foundational knowledge of Python programming, data analysis, machine learning, and backend development. Interested in developing practical AI applications, building REST APIs, and using data-driven approaches to solve real-world problems.
+
+## TECHNICAL SKILLS
+
+**Programming Languages:** Python, SQL, Java
+
+**AI and Machine Learning:** scikit-learn, pandas, NumPy, machine learning fundamentals, TF-IDF, text preprocessing, model evaluation
+
+**Backend Development:** FastAPI, REST APIs, basic Flask
+
+**Tools and Technologies:** Git, GitHub, Streamlit, pytest, VS Code
+
+**Core Concepts:** Data structures and algorithms, debugging, unit testing, basic statistics
+
+## PROJECTS
+
+### 1. AI Career Intelligence & Skill-Gap Analyzer
+**Technologies:** Python, FastAPI, Streamlit, scikit-learn
+
+- Developed an application that compares resume skills against job-description requirements.
+- Implemented skill matching, missing-skill identification, and skill-coverage analysis.
+- Built a prerequisite-aware learning planner that estimates learning hours based on identified skill gaps.
+- Integrated REST API functionality and downloadable Markdown and JSON reports.
+- Used automated tests to verify important application behavior.
+
+### 2. Student Performance Analysis
+**Technologies:** Python, pandas, NumPy, matplotlib
+
+- Analyzed a sample student-performance dataset to identify patterns and relationships.
+- Used pandas and NumPy for data cleaning and transformation.
+- Created visualizations to communicate findings and summarized the analysis.
+
+## EDUCATION
+
+**Bachelor of Computer Applications (BCA)**  
+Example University  
+2025–2028
+
+Relevant Coursework: Python Programming, Data Structures, Database Management Systems, Statistics, Introduction to Machine Learning.
+
+## ADDITIONAL INFORMATION
+
+- Interested in AI/ML engineering, NLP, and applied machine learning.
+- Familiar with collaborative development using Git and GitHub.
+- Currently strengthening problem-solving, software testing, and backend development skills.
+
+*Sample resume for testing purposes. All personal details are fictional placeholders. Replace them with accurate information before using this as a real resume.*

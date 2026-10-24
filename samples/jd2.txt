@@ -1,0 +1,66 @@
+# Junior AI/ML Developer Intern
+
+**Company:** Example Analytics Labs  
+**Location:** Jaipur, Rajasthan / Hybrid  
+**Employment Type:** Internship
+
+## ABOUT THE ROLE
+
+Example Analytics Labs is looking for a motivated AI/ML Developer Intern to help build data-driven applications and machine-learning features. The selected candidate will work with developers to prepare datasets, experiment with machine-learning models, develop APIs, and document reliable software solutions.
+
+This fictional position is designed for students who want hands-on experience applying Python and machine learning to practical problems.
+
+## RESPONSIBILITIES
+
+- Develop Python scripts for data processing and machine-learning experimentation.
+- Clean, transform, and analyze datasets using pandas and NumPy.
+- Build baseline machine-learning models using scikit-learn.
+- Apply text preprocessing and TF-IDF techniques to text-based datasets.
+- Develop and maintain REST APIs using FastAPI or Flask.
+- Write automated tests using pytest.
+- Use Git and GitHub for version control and collaboration.
+- Document experiments, assumptions, model limitations, and implementation decisions.
+- Collaborate with team members to debug and improve application performance.
+
+## REQUIRED SKILLS
+
+- Strong foundation in Python programming.
+- Familiarity with pandas and NumPy.
+- Understanding of machine-learning fundamentals.
+- Experience or academic exposure to scikit-learn.
+- Knowledge of data preprocessing and basic statistics.
+- Understanding of REST APIs and HTTP fundamentals.
+- Familiarity with FastAPI or Flask.
+- Basic knowledge of Git and GitHub.
+- Debugging and problem-solving skills.
+
+## PREFERRED SKILLS
+
+- Streamlit application development.
+- SQL and relational databases.
+- Docker and containerization.
+- CI/CD fundamentals.
+- Cloud platforms, particularly AWS.
+- Natural Language Processing (NLP).
+- PyTorch or TensorFlow.
+- Experience evaluating machine-learning models.
+- Basic MLOps concepts.
+- Clear technical documentation and communication.
+
+## EDUCATION
+
+Currently pursuing a degree in BCA, Computer Science, Information Technology, Data Science, or a related discipline.
+
+## WHAT WE VALUE
+
+- Practical projects that demonstrate technical understanding.
+- Ability to explain design decisions and debugging approaches.
+- Willingness to learn new tools and technologies.
+- Honest communication about experience, limitations, and results.
+- A structured approach to solving technical problems.
+
+## APPLICATION REQUIREMENTS
+
+Applicants should submit a resume and links to relevant projects or GitHub repositories. Candidates should be prepared to explain one project, the technologies used, and a technical challenge they addressed.
+
+*This is a fictional job description created exclusively for testing the AI Career Intelligence & Skill-Gap Analyzer. It is not a real job opening.*

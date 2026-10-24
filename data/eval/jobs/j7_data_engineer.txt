@@ -1,0 +1,12 @@
+Data Engineer
+
+Requirements
+- Strong Python and SQL
+- Building ETL pipelines with Spark
+- Workflow orchestration with Airflow
+- Experience with data warehousing such as Snowflake or Redshift
+- AWS cloud services
+
+Nice to have
+- Kafka
+- Docker

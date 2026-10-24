@@ -1,0 +1,11 @@
+Ananya Rao
+Deep Learning Engineer | 2 years experience
+
+SKILLS
+Python, PyTorch, TensorFlow, computer vision, OpenCV, deep learning, scikit-learn, model evaluation, MLflow, Docker, AWS SageMaker, Git
+
+EXPERIENCE
+ML Engineer, VisionAI
+- Trained CNN-based object detection models in PyTorch for retail shelf monitoring.
+- Tracked experiments with MLflow and deployed models as Docker containers on AWS SageMaker.
+- Used cross-validation and error analysis with scikit-learn to improve precision by 12 percent.

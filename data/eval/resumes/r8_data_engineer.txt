@@ -1,0 +1,11 @@
+Pooja Desai
+Data Engineer | 3 years experience
+
+SKILLS
+Python, SQL, PySpark, Apache Airflow, Kafka, AWS (S3, Redshift), Snowflake, ETL, data pipelines, Docker, Git
+
+EXPERIENCE
+Data Engineer, LogiTrack
+- Built ETL pipelines in PySpark and orchestrated them with Airflow, loading 50 GB daily into Snowflake.
+- Streamed shipment events through Kafka into S3 and Redshift.
+- Wrote SQL transformations and containerized jobs with Docker.
