@@ -2,20 +2,33 @@
 
 Compare a resume with a job description and get:
 
-- A **match score** (0–100) with a transparent breakdown.
-- The **required and preferred skills** you match or miss, understanding that scikit-learn implies machine learning and that "FastAPI or Flask" needs only one.
+- A **match score (0–100)** with a transparent breakdown.
+- **Required and preferred skills** you match or miss, understanding that scikit-learn implies machine learning and that "FastAPI or Flask" needs only one.
 - A **learning plan**: missing skills ordered with prerequisites first, effort estimates, free resources, and a practice project for each.
 - Optional **job-market demand** from a folder of postings, used to prioritise what to learn.
 
 Works from the command line, as a REST API, or in a Streamlit web app. Reads `.txt`, `.md`, `.pdf`, and `.docx` resumes.
 
+## Live Demo
+
+Try the deployed application: [AI Career Intelligence & Skill-Gap Analyzer](https://ai-career-intelligence-canppethsu2ikstdq96n7h.streamlit.app/)
+
+Upload a resume in PDF, DOCX, TXT, or Markdown format, enter a job description, and review the match score, matched and missing skills, and suggested learning plan.
+### Example Analysis
+
+![AI Career Intelligence — Resume Analysis Results](docs/screenshots/analysis-results.png)
+
 ## Quick start
 
 ```bash
 python -m venv .venv
+
 # Activate the environment:
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
+# Windows PowerShell:
+.venv\Scripts\Activate.ps1
+
+# macOS/Linux:
+source .venv/bin/activate
 
 pip install -r requirements-dev.txt -r requirements-ui.txt
 
@@ -26,8 +39,8 @@ uvicorn src.app:app --reload
 docker compose up --build
 ```
 
-- Streamlit web app: http://localhost:8501
-- FastAPI Swagger UI: http://127.0.0.1:8000/docs
+- Streamlit web app: [http://localhost:8501](http://localhost:8501)
+- FastAPI Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 Only the CLI needs `pip install -r requirements.txt` (scikit-learn and NumPy).
 
@@ -95,8 +108,7 @@ resume + JD
 
 4. **Score** — `0.60 × required coverage + 0.15 × preferred coverage + 0.25 × text similarity`, with weights renormalised when a job description has no nice-to-have section.
 
-5. **Learning plan** — Missing skills are ordered by importance and demand, with prerequisites such as Linux, Docker, and Kubernetes scheduled first. A prerequisite the
-candidate already has, or whose parent skill they have, is not repeated.
+5. **Learning plan** — Missing skills are ordered by importance and demand, with prerequisites such as Linux, Docker, and Kubernetes scheduled first. A prerequisite the candidate already has, or whose parent skill they have, is not repeated.
 
 ## Evaluation
 
@@ -137,19 +149,21 @@ Makefile                   Development commands
 
 ## Status
 
-### Verified locally
+### Deployment
 
-- FastAPI starts successfully, and Swagger UI is accessible at `/docs`.
-- `POST /analyze` returned HTTP 200 for the tested resume and job description.
-- Inline required and preferred skill headings were correctly separated in the tested example.
-- The API returned matched and missing skills, coverage values, a match score, skill gaps, and a structured learning plan.
-- **Automated tests:** `pytest -q` — **81 passed** in the latest run.
+- **Live demo:** Deployed on Streamlit Community Cloud.
+- **Resume uploads:** PDF upload and the main analysis workflow have been verified in the deployed application.
+- **Core workflow:** Match scoring, missing-skills analysis, and learning-plan generation have been checked.
+- **Input validation:** Empty resumes, invalid PDF uploads, short resumes, and unrelated resume/job-description pairs have been tested.
 
-### Still requiring independent verification
+### Testing and automation
 
-- Docker image building and `docker compose up --build`.
-- The CI workflow in the target GitHub repository.
-- Streamlit app behaviour and embedding-based similarity should be tested independently if they have not already been checked.
+- **Automated tests:** `pytest -q` — 81 tests passed in the latest confirmed run.
+- **GitHub Actions:** CI checks passed, including the supported Python-version test matrix and benchmark quality gate.
+- **Docker:** Image build passed in GitHub Actions.
+- **FastAPI:** The API starts successfully, Swagger UI is accessible at `/docs`, and `POST /analyze` returned HTTP 200 for the tested input.
+
+These results reflect the tests and checks completed so far; they do not guarantee that every possible input or deployment environment will behave identically.
 
 Resource links in `data/resources.json` should be opened and checked before relying on them.
 
@@ -160,3 +174,4 @@ Resource links in `data/resources.json` should be opened and checked before rely
 - **Skill phrasing:** Alias-based matching may miss skills described in different words, such as "built dashboards". An NER or LLM-based extractor could help.
 - **Scanned PDFs:** Scanned documents require OCR.
 - **Evaluation data:** The benchmark should be expanded with real, anonymised documents and labels from multiple annotators.
+- **Similarity ranking:** The current hybrid scorer does not outperform plain TF-IDF on the reported ranking metrics. Further evaluation and tuning may help establish where the hybrid approach adds the most value.
