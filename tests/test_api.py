@@ -1,3 +1,4 @@
+
 import pytest
 
 pytest.importorskip("fastapi")
@@ -32,16 +33,44 @@ def test_validation_errors():
 
 
 def test_upload_txt():
-    r = client.post("/analyze/upload", data={"jd_text": JD},
-                    files={"resume": ("cv.txt", RESUME.encode(), "text/plain")})
+    r = client.post(
+        "/analyze/upload",
+        data={"jd_text": JD},
+        files={"resume": ("cv.txt", RESUME.encode(), "text/plain")},
+    )
     assert r.status_code == 200 and r.json()["analysis"]["matched_required"]
 
 
 def test_upload_unsupported_type():
-    r = client.post("/analyze/upload", data={"jd_text": JD}, files={"resume": ("cv.exe", b"x" * 50, "application/octet-stream")})
+    r = client.post(
+        "/analyze/upload",
+        data={"jd_text": JD},
+        files={"resume": ("cv.exe", b"x" * 50, "application/octet-stream")},
+    )
     assert r.status_code == 415
 
 
 def test_upload_unreadable_text():
-    r = client.post("/analyze/upload", data={"jd_text": JD}, files={"resume": ("cv.txt", b"hi", "text/plain")})
+    r = client.post(
+        "/analyze/upload",
+        data={"jd_text": JD},
+        files={"resume": ("cv.txt", b"hi", "text/plain")},
+    )
     assert r.status_code == 422
+
+
+def test_upload_rejects_file_larger_than_5_mb():
+    oversized_file = b"A" * (5 * 1024 * 1024 + 1)
+
+    r = client.post(
+        "/analyze/upload",
+        data={"jd_text": JD},
+        files={
+            "resume": (
+                "large_resume.txt",
+                oversized_file,
+                "text/plain",
+            )
+        },
+    )
+    assert r.status_code == 413

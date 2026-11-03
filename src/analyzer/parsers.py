@@ -1,4 +1,3 @@
-"""Read resume / JD text from .txt, .md, .pdf and .docx (path or raw bytes)."""
 from __future__ import annotations
 
 import io
@@ -18,19 +17,55 @@ def _read_pdf(data: bytes) -> str:
         from pypdf import PdfReader
     except ImportError as exc:  # pragma: no cover - depends on environment
         raise RuntimeError("PDF support needs `pip install pypdf`") from exc
+
+    max_pages = 100
+    max_text_chars = 2_000_000
+
     reader = PdfReader(io.BytesIO(data))
-    return "\n".join((page.extract_text() or "") for page in reader.pages)
+
+    if len(reader.pages) > max_pages:
+        raise ValueError("PDF exceeds the 100-page limit.")
+
+    extracted = []
+    total_chars = 0
+
+    for page in reader.pages:
+        page_text = page.extract_text() or ""
+        total_chars += len(page_text)
+
+        if total_chars > max_text_chars:
+            raise ValueError("PDF extracted text exceeds the 2-million-character limit.")
+
+        extracted.append(page_text)
+
+    return "\n".join(extracted)
 
 
 def _read_docx(data: bytes) -> str:
-    """Extract text from a .docx using only the standard library (no python-docx)."""
+    """Extract text from a .docx using only the standard library."""
+    max_xml_bytes = 10 * 1024 * 1024
+
     with zipfile.ZipFile(io.BytesIO(data)) as z:
+        info = z.getinfo("word/document.xml")
+
+        if info.file_size > max_xml_bytes:
+            raise ValueError("DOCX document content exceeds the 10 MB limit.")
+
         xml = z.read("word/document.xml").decode("utf-8", errors="ignore")
-    xml = re.sub(r"</w:p>", "\n", xml)          # paragraph ends -> newline
+
+    xml = re.sub(r"</w:p>", "\n", xml)
     xml = re.sub(r"<w:tab/>", "\t", xml)
-    xml = re.sub(r"<[^>]+>", "", xml)           # drop remaining tags
-    for entity, char in (("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"), ("&quot;", '"'), ("&apos;", "'")):
+    xml = re.sub(r"<[^>]+>", "", xml)
+
+    for entity, char in (
+        ("&amp;", "&"),
+        ("&lt;", "<"),
+        ("&gt;", ">"),
+        ("&quot;", '"'),
+        ("&apos;", "'"),
+    ):
         xml = xml.replace(entity, char)
+
     return xml
 
 

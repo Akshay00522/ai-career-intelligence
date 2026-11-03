@@ -1,10 +1,3 @@
-"""FastAPI service.  Run from the project root:  uvicorn src.app:app --reload
-
-Endpoints
-  GET  /health
-  POST /analyze          JSON body: resume_text, jd_text, method, hours_per_week
-  POST /analyze/upload   multipart: resume file (.txt/.md/.pdf/.docx) + jd_text
-"""
 import sys
 from pathlib import Path
 
@@ -53,15 +46,27 @@ async def analyze_upload(
     method: str = Form("tfidf", pattern=METHOD_PATTERN),
     hours_per_week: float = Form(10, gt=0, le=80),
 ) -> dict:
-    data = await resume.read()
-    if len(data) > MAX_UPLOAD_BYTES:
-        raise HTTPException(status_code=413, detail="File too large (limit 5 MB).")
+    data = bytearray()
+
+    while chunk := await resume.read(64 * 1024):
+        data.extend(chunk)
+
+        if len(data) > MAX_UPLOAD_BYTES:
+            raise HTTPException(
+                status_code=413,
+                detail="File too large (limit 5 MB).",
+            )
+
+    data = bytes(data)
+
     try:
         text = read_document(data, resume.filename or "")
     except UnsupportedFormat as exc:
         raise HTTPException(status_code=415, detail=str(exc)) from exc
     except Exception as exc:  # corrupt PDF/DOCX
         raise HTTPException(status_code=422, detail=f"Could not read the file: {exc}") from exc
+
     if len(text.strip()) < 20:
         raise HTTPException(status_code=422, detail="No readable text found (scanned PDFs need OCR).")
+
     return _run(text, jd_text, method, hours_per_week)

@@ -38,6 +38,23 @@ def make_pdf(text):
     return out
 
 
+def test_pdf_rejects_more_than_100_pages():
+    pytest.importorskip("pypdf")
+
+    from pypdf import PdfWriter
+
+    writer = PdfWriter()
+
+    for _ in range(101):
+        writer.add_blank_page(width=612, height=792)
+
+    buf = io.BytesIO()
+    writer.write(buf)
+
+    with pytest.raises(ValueError, match="100-page limit"):
+        read_document(buf.getvalue(), "cv.pdf")
+
+
 def test_txt_bytes():
     assert "Python" in read_document(b"Skills: Python", "cv.txt")
 
@@ -76,3 +93,23 @@ def test_unsupported_format():
 def test_bytes_need_filename():
     with pytest.raises(ValueError):
         read_document(b"x")
+
+
+def test_docx_rejects_oversized_document_content():
+    oversized_xml = "A" * (10 * 1024 * 1024 + 1)
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("word/document.xml", oversized_xml)
+
+    with pytest.raises(ValueError, match="10 MB limit"):
+        read_document(buf.getvalue(), "cv.docx")
+
+
+def test_pdf_rejects_excessive_extracted_text():
+    pytest.importorskip("pypdf")
+
+    oversized_text = "A" * 2_000_001
+
+    with pytest.raises(ValueError, match="2-million-character limit"):
+        read_document(make_pdf(oversized_text), "cv.pdf")
