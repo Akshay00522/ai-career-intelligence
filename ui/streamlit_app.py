@@ -1,4 +1,3 @@
-
 """Streamlit front end for the AI Career Intelligence & Skill-Gap Analyzer."""
 
 import json
@@ -237,7 +236,7 @@ st.markdown(
             padding: 0.8rem;
         }
     }
-    
+
 /* ---------- Accessibility and contrast fixes ---------- */
 
 /* Keep text readable throughout the sidebar */
@@ -513,6 +512,12 @@ left, right = st.columns(2, gap="large")
 with left:
     st.markdown("#### Your resume")
 
+    st.info(
+        "Privacy notice: Your resume is processed to generate your analysis. "
+        "Please avoid uploading confidential or highly sensitive personal "
+        "information. Data handling may also depend on the hosting platform."
+    )
+
     upload = st.file_uploader(
         "Upload a resume",
         type=["pdf", "docx", "txt", "md"],
@@ -558,7 +563,6 @@ if analyze_clicked:
             st.error(f"Could not read the uploaded file: {exc}")
             st.stop()
 
-    
     if len(resume_text.strip()) < 20 or len(jd_text.strip()) < 20:
         st.markdown(
             """
